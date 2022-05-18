@@ -46,5 +46,9 @@ new_oml_dat = makeOMLDataSet(
 
 # Upload dataset to openML
 uploadOMLDataSet(new_oml_dat, verbosity = 2)
+                     
+# Uploading data set to server.
+# Uploading to 'http://www.openml.org/api/v1/data'.
+# Data set successfully uploaded. Data set ID: 43880
 
-#deleteOMLObject(43879, object = c("data"), verbosity = NULL)
+#deleteOMLObject(43880, object = c("data"), verbosity = NULL)
