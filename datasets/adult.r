@@ -1,7 +1,9 @@
+library("OpenML")
+library("data.table")
 
 colNames <- c("age", "workclass", "fnlwgt", "education", "education_num", "marital_status",
               "occupation", "relationship", "race", "sex", "capital_gain", "capital_loss",  
-               "hours_per_week", "native_country", "class")
+              "hours_per_week", "native_country", "class")
 
 # Adult train and test sets
 train <- fread("C:/Users/SORU/Downloads/adult.csv", stringsAsFactors = TRUE)
@@ -19,6 +21,8 @@ dat2[dat2 == '?'] <- NA
 # Replace dot in class column with empty string
 dat2$class <- sapply(dat2$class, function(x) gsub('\\.', "", x))
 
+dat2$class <- as.factor(dat2$class)
+
 # Drop duplicates 
 dat2 <- dat2[!duplicated(dat2)]
 
@@ -28,7 +32,7 @@ setOMLConfig(server = NULL, verbosity = NULL, apikey = "3253de969b5b79a5c673181e
 
 # Dataset Description
 new_desc = makeOMLDataSetDescription(
-  id = 150635,
+  #id = 150635,
   name = "adult",
   description = paste("Predict whether income exceeds $50K/yr based on census data. Also known as Census Income dataset. Train and test sets combined. Null values represented with question mark is replaced with na. 52 duplicate values found and dropped"),
   default.target.attribute = "class",
@@ -46,9 +50,9 @@ new_oml_dat = makeOMLDataSet(
 
 # Upload dataset to openML
 uploadOMLDataSet(new_oml_dat, verbosity = 2)
-                     
+
 # Uploading data set to server.
 # Uploading to 'http://www.openml.org/api/v1/data'.
-# Data set successfully uploaded. Data set ID: 43880
+# Data set successfully uploaded. Data set ID: 43898
 
 #deleteOMLObject(43880, object = c("data"), verbosity = NULL)
