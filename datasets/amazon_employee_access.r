@@ -21,7 +21,7 @@ setOMLConfig(server = NULL, verbosity = NULL, apikey = "3253de969b5b79a5c673181e
 
 # Dataset Description
 new_desc = makeOMLDataSetDescription(
-
+  
   name = "amazon_employee_access",
   description = paste("Amazon Employee Access (Kaggle Competition). The data consists of real historical data collected from 2010 & 2011.  Employees are manually allowed or denied access to resources over time. You must create an algorithm capable of learning from this historical data to predict approval/denial for an unseen set of employees. "),
   default.target.attribute = "ACTION",
@@ -43,6 +43,6 @@ uploadOMLDataSet(new_oml_dat, verbosity = 2)
 
 # Uploading data set to server.
 # Uploading to 'http://www.openml.org/api/v1/data'.
-# Data set successfully uploaded. Data set ID: 43898
-
-#deleteOMLObject(43880, object = c("data"), verbosity = NULL)
+# Data set successfully uploaded. Data set ID: 43900
+ 
+#deleteOMLObject(43900, object = c("data"), verbosity = NULL)
