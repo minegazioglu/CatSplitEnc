@@ -43,6 +43,6 @@ uploadOMLDataSet(new_oml_dat, verbosity = 2)
 
 # Uploading data set to server.
 # Uploading to 'http://www.openml.org/api/v1/data'.
-# Data set successfully uploaded. Data set ID: 43920
+# Data set successfully uploaded. Data set ID: 43921
 
-#deleteOMLObject(43920, object = c("data"), verbosity = NULL)
+#deleteOMLObject(43921, object = c("data"), verbosity = NULL)
