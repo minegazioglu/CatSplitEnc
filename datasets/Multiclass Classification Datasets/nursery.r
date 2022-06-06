@@ -22,7 +22,7 @@ setOMLConfig(server = NULL, verbosity = NULL, apikey = "3253de969b5b79a5c673181e
 # Dataset Description
 new_desc = makeOMLDataSetDescription(
   
-  name = "mushroom",
+  name = "nursery",
   description = paste("Nursery Database was derived from a hierarchical decision model originally developed to rank applications for nursery schools."),
   default.target.attribute = "class" ,
   licence = "public",
@@ -41,9 +41,10 @@ new_oml_dat = makeOMLDataSet(
 # Upload dataset to openML
 uploadOMLDataSet(new_oml_dat, verbosity = 2)
 
+
 # Uploading data set to server.
 # Uploading to 'http://www.openml.org/api/v1/data'.
-# Data set successfully uploaded. Data set ID: 43923
+# Data set successfully uploaded. Data set ID: 43938
 
-#deleteOMLObject(43923, object = c("data"), verbosity = NULL)
+#deleteOMLObject(43938, object = c("data"), verbosity = NULL)
 
