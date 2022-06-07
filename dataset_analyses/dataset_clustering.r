@@ -3,6 +3,10 @@
 # Analysis results here : https://www.overleaf.com/project/629f533af968deac14f7db3c
 
 
+#Instead of measuring the distance directly, it analyzes the variance of clusters. Ward’s is said to be the most suitable method for quantitative variables.
+#Ward’s method says that the distance between two clusters, A and B, is how much the sum of squares will increase when we merge them:
+
+
 # Packages
 library(dplyr)
 require(data.table)
