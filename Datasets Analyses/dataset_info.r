@@ -1,3 +1,14 @@
+## To Do List:
+
+# We can add class distributions of classification datasets
+# Should we add column unique level counts as a column
+# In table caption describe columns names
+# Change dataset names to full names instead of shortened nicknames
+# The resulting table is shared here : https://www.overleaf.com/project/629f533af968deac14f7db3c
+
+
+
+
 # Packages
 library(dplyr)
 require(data.table)
