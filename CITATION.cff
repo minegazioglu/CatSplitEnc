@@ -1,7 +1,7 @@
 cff-version: 1.1.0
 message: "If you use this software, please cite it as below."
 authors:
-   family-names: "Baydoğan"
+  family-names: "Baydoğan"
   given-names: "Mustafa"
 - family-names: "Gazioğlu"
   given-names: "Mine"
