@@ -1,2 +1,2 @@
 # CatSplitEnc
-Encode categorical variables with split information of decision Tree
+Encode categorical variables with split information of decision tree
